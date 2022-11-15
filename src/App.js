@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Form from './components/Form';
 import Search from './components/Search';
 import BookList from './components/BookList';
-import Navbar from './components/Navbar';
+import NavBar from './components/NavBar';
 import './App.css';
 
 
