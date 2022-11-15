@@ -24,6 +24,7 @@ function App() {
     <div className="App">
      
       <Header />
+      <NavBar />
       <Form />
       <Search />
       <BookList books={books}/>
