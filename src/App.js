@@ -10,7 +10,9 @@ import './App.css';
 //import Search from './components/Search';
 
 function App() {
-  // FETCHES AND STORES BOOK DATA
+  
+  
+  
   const [books, setBooks] = useState([])
   
   const URL = "http://localhost:3000"
@@ -21,17 +23,22 @@ function App() {
     .then(data => setBooks(data))
   }, [])
   
-  
-  // HANDLES SEARCH TERM
   const [searchTerm, setSearchTerm]= useState("")
-  
+  const filteredBooks = books.filter((book) => {
+    return (book.title.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+
+  }
+    )
+
+  console.log(filteredBooks)
   return (
     <div className="App">
       <Header />
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <NavBar />
       <Form />
-      <BookList books={books} />
+      <BookList books={filteredBooks} />
     </div>
   );
 }
