@@ -3,9 +3,10 @@ const Header = () => {
       <>
         <div className="header">
           <div className="row1">
-            <h1>
+            <h1>BOOKLY </h1>
+            <h3>
               Some books leave us free and <br /> Some books make us free{" "}
-            </h1>
+            </h3>
           </div>
           <div className="row2">
             <h2>Find Your Book</h2>

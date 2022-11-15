@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Form from './components/Form';
 import Search from './components/Search';
 import BookList from './components/BookList';
+import Navbar from './components/Navbar';
 import './App.css';
 
 
@@ -18,8 +19,6 @@ function App() {
     .then(response => response.json())
     .then(data => setBooks(data))
    }, [])
-  
-  console.log(books)
 
   return (
     <div className="App">
