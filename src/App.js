@@ -10,21 +10,21 @@ import './App.css';
 //import Search from './components/Search';
 
 function App() {
-
-  const [searchTerm, setSearchTerm]= useState("")
-
-
-
+  // FETCHES AND STORES BOOK DATA
   const [books, setBooks] = useState([])
   
   const URL = "http://localhost:3000"
   const bookURL = URL + "/books"
-   useEffect(() => {
+  useEffect(() => {
     fetch(bookURL)
     .then(response => response.json())
     .then(data => setBooks(data))
-   }, [])
-
+  }, [])
+  
+  
+  // HANDLES SEARCH TERM
+  const [searchTerm, setSearchTerm]= useState("")
+  
   return (
     <div className="App">
       <Header />
