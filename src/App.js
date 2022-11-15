@@ -1,11 +1,33 @@
+import React, {useState, useEffect,} from 'react';
+import './App.css';
+import Header from './components/Header';
+import Form from './components/Form';
+import Search from './components/Search';
+import BookList from './components/BookList';
 import './App.css';
 
+
 function App() {
+
+  const [books, setBooks] = useState([])
+  
+  const URL = "http://localhost:3000"
+  const bookURL = URL + "/books"
+   useEffect(() => {
+    fetch(bookURL)
+    .then(response => response.json())
+    .then(data => setBooks(data))
+   }, [])
+  
+  console.log(books)
+
   return (
     <div className="App">
-      <header className="App-header">
-        App component
-      </header>
+     
+      <Header />
+      <Form />
+      <Search />
+      <BookList books={books}/>
     </div>
   );
 }
