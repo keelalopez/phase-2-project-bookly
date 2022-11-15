@@ -25,8 +25,11 @@ function App() {
   
   const [searchTerm, setSearchTerm]= useState("")
   const filteredBooks = books.filter((book) => {
-    return (book.title.toLowerCase().includes(searchTerm.toLowerCase()))
-  })
+    return (book.title.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+
+  }
+    )
 
   console.log(filteredBooks)
   return (
