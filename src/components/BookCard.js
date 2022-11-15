@@ -2,9 +2,8 @@ const BookCard = ({book}) => {
 
 
     return (
-      <div>
-        <img src = {book.image}
-        />
+      <div className="card">
+        <img src = {book.image} alt={book.title}/>
       </div>
     )
   }
