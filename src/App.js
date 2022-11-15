@@ -7,9 +7,13 @@ import Search from './components/Search';
 import BookList from './components/BookList';
 import NavBar from './components/NavBar';
 import './App.css';
-
+//import Search from './components/Search';
 
 function App() {
+
+  const [searchTerm, setSearchTerm]= useState("")
+
+
 
   const [books, setBooks] = useState([])
   
@@ -23,12 +27,11 @@ function App() {
 
   return (
     <div className="App">
-     
       <Header />
+      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <NavBar />
       <Form />
-      <Search />
-      <BookList books={books}/>
+      <BookList books={books} />
     </div>
   );
 }
