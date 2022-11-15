@@ -1,6 +1,15 @@
-const Form = () => {
+function Form () {
     return (
-      <div>Form</div>
+      <div>
+        <h3>New Book</h3>
+        <form>
+            <input placeholder="Title"></input>
+            <input placeholder="Author"></input>
+            <input placeholder="Image"></input>
+            <input placeholder="Rating" type="number"></input>
+            <input placeholder="Description"></input>
+        </form>
+      </div>
     )
   }
   
