@@ -25,19 +25,20 @@ function App() {
   
   const [searchTerm, setSearchTerm]= useState("")
   const filteredBooks = books.filter((book) => {
-    return (book.title.toLowerCase().includes(searchTerm.toLowerCase())
-    )
+    return (book.title.toLowerCase().includes(searchTerm.toLowerCase()))
+  })
 
+  // ELEVATOR FUNCTION TO RENDER NEW BOOK
+  function elevatorNewBook (newBookObj) {
+    setBooks([...books, newBookObj])
   }
-    )
-
-  console.log(filteredBooks)
+  
   return (
     <div className="App">
       <Header />
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <NavBar />
-      <Form />
+      <Form elevatorNewBook={elevatorNewBook}/>
       <BookList books={filteredBooks} />
     </div>
   );

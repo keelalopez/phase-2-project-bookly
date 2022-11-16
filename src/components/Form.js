@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function Form () {
+function Form ({elevatorNewBook}) {
     // USE STATE TO TRACK NEW BOOK DETAILS
     const [title, setTitle] = useState("");
     const [author, setAuthor] = useState("");
@@ -23,7 +23,14 @@ function Form () {
             // startDate: "",
             // "completed": true
         }
-        console.log(newBook)
+
+        fetch("http://localhost:3000/books", {
+          headers: {"Content-Type": "application/json"},
+          method: "POST",
+          body: JSON.stringify(newBook)
+        })
+        .then(response => response.json())
+        .then(elevatorNewBook(newBook))
     }
     
     return (
