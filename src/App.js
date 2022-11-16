@@ -5,8 +5,8 @@ import Header from './components/Header';
 import Form from './components/Form';
 import BookList from './components/BookList';
 import NavBar from './components/NavBar';
+import LogIn from './components/LogIn';
 import './App.css';
-import BookCard from './components/BookCard';
 
 function App() {
 
@@ -31,9 +31,6 @@ function App() {
   function elevatorNewBook (newBookObj) {
     setBooks([...books, newBookObj])
   }
-  
-
-  
 
   return (
     <div className="App">
@@ -41,6 +38,10 @@ function App() {
       <NavBar />
 
       <Switch>
+        <Route path="/login">
+          <LogIn />
+        </Route>
+
         <Route path="/form">
           <Form elevatorNewBook={elevatorNewBook} />
         </Route>

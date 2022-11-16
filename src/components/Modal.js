@@ -12,11 +12,6 @@ const Modal =({books,setShowModal})=>{
             <div className="inner-box">
               <img src={books.image} alt={books.title} />
               <div className="info">
-
-                <h1>{books.title}</h1>
-                <h3>{books.author}</h3>
-                <br />
-                <h4>{books.description}</h4>
               </div>
             </div>
           </div>

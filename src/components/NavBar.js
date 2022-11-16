@@ -14,11 +14,15 @@ function NavBar () {
 
     return (
         <nav>
+            <NavLink exact to="/login" style={linkStyles}
+                activeStyle={{background: "darkblue",}}>Log In</NavLink>
+            
             <NavLink exact to="/" style={linkStyles} 
                 activeStyle={{background: "darkblue",}}>Books</NavLink>
 
             <NavLink exact to="/form" style={linkStyles}
                 activeStyle={{background: "darkblue",}}>Add New Book</NavLink>
+            
         </nav>
     )
 }
