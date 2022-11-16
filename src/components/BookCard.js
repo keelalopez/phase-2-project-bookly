@@ -20,6 +20,9 @@ const BookCard = ({ book }) => {
               <h3>{book.author}</h3>
               <h4>Rating: {book.rating}</h4>
               <p>{book.description}</p>
+              <button className={book.completed ? "finished" : null}>
+                {book.completed ? "Completed" : "Not Completed"}
+              </button>
             </div>
             <img src={book.image} alt={book.title} />
           </div>

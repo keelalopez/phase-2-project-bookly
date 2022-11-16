@@ -194,6 +194,14 @@ html{
 .Modal-details p {
   padding: 5px;
 }
+.Modal-details button {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.Modal-details .finished{
+  background-color: rgb(96, 245, 96);
+}
 
 .form-box{
   min-width: 30%;
