@@ -35,7 +35,7 @@ function Form ({elevatorNewBook}) {
     
     return (
       <div>
-        <h3>New Book</h3>
+        <h3>Add New Book</h3>
         <form >
             <input 
                 placeholder="Title" 
