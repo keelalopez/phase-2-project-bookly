@@ -139,16 +139,16 @@ html{
 
 .card:hover{
   transform: scale(0.9);
-  background-color: red;
+  background-color: aqua;
 
 }
 
 .card{
-    background-color: aqua;
+    background-color: darkblue;
     border-radius: 1rem;
     padding: 0.5rem;
     margin-bottom: px;
-    box-shadow: 0 5px 5px rgba(212, 185, 150, 5);
+    box-shadow: 0 3px 3px rgba(212, 185, 150, 5);
     transition: .5s;
     position: relative;
 } 
@@ -259,6 +259,16 @@ html{
   padding: .5rem .8rem .5rem .8rem;
   border-radius: 5px;
   font-size: 15px;
+}
+
+.login-box h2 {
+  font-size: 35px;
+  text-align: center;
+  margin: 10px;
+}
+
+navbar {
+  border-radius: 3px;
 }
 
 
