@@ -10,7 +10,6 @@ const BookList = ({books}) => {
       {books.map((book) => {
         return( 
         <BookCard book={book} key={book.id} />
-    
         
         )
       })}

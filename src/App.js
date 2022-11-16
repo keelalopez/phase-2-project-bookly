@@ -6,8 +6,10 @@ import Form from './components/Form';
 import BookList from './components/BookList';
 import NavBar from './components/NavBar';
 import './App.css';
+import BookCard from './components/BookCard';
 
 function App() {
+
   // FETCHES DATA AND STORES IN STATE VARIABLE
   const [books, setBooks] = useState([])
   
@@ -30,6 +32,9 @@ function App() {
     setBooks([...books, newBookObj])
   }
   
+
+  
+
   return (
     <div className="App">
       <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
@@ -37,11 +42,13 @@ function App() {
 
       <Switch>
         <Route path="/form">
-          <Form elevatorNewBook={elevatorNewBook}/>
+          <Form elevatorNewBook={elevatorNewBook} />
         </Route>
 
         <Route exact path="/">
-          <BookList books={filteredBooks} />
+          <BookList
+            books={filteredBooks}
+          />
         </Route>
       </Switch>
     </div>
