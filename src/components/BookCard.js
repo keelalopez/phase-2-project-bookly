@@ -2,7 +2,7 @@ import BookDetails from "./BookDetails"
 
 const BookCard = ({book}) => {
   function handleClick () {
-    console.log({book})
+    console.log(book.title)
     // return <BookDetails book={book}/>
   }
 
