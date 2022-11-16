@@ -1,6 +1,6 @@
 import BookCard from "./BookCard";
 // import Search from "./Search";
-// import Girl-Reading from "./images/Girl-Reading";
+ import GirlReading from "../images/Girl-Reading.jpeg";
 
 const Header = ({searchTerm, setSearchTerm}) => {
 
@@ -36,7 +36,7 @@ const Header = ({searchTerm, setSearchTerm}) => {
               </button>
             </div>
 
-            <img src="./images/Girl-Reading.jpeg" alt="" />
+            <img src={GirlReading} alt= "" />
           </div>
         </div>
       </>
