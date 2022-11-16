@@ -171,8 +171,25 @@ html{
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
+}
+
+.Modal img {
+  height: 1%;
+  margin: 10px;
+}
+
+.Modal-details h1 {
+  padding: 5px;
+}
+
+.Modal-details h3 {
+  padding: 5px;
+}
+
+.Modal-details p {
+  padding: 5px;
 }
 
 .form-box{
