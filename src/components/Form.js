@@ -34,9 +34,9 @@ function Form ({elevatorNewBook}) {
     }
     
     return (
-      <div>
-        <h3>Add New Book</h3>
-        <div className="form-box">
+      <div className="form-box">
+        <h2>Add New Book</h2>
+        <div>
           <form>
             <input
               placeholder="Title"
@@ -49,17 +49,17 @@ function Form ({elevatorNewBook}) {
             />
             <br></br>
             <input
-              placeholder="Image"
-              onChange={(e) => setImage(e.target.value)}
-            />
-            <br></br>
-            <input
               placeholder="Rating"
               type="number"
               onChange={(e) => setRating(e.target.value)}
             />
             <br></br>
             <input
+              placeholder="Image"
+              onChange={(e) => setImage(e.target.value)}
+            />
+            <br></br>
+            <textarea
               placeholder="Description"
               onChange={(e) => setDescription(e.target.value)}
             />
