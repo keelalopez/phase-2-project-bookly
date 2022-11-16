@@ -5,8 +5,6 @@ const BookList = ({books}) => {
     <div>
       {books.map((book) => {
         return <BookCard book={book} key={book.id}/>
-        
-
       })}
     </div>
   )

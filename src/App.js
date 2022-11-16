@@ -36,8 +36,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <NavBar />
+      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <Form elevatorNewBook={elevatorNewBook}/>
       <BookList books={filteredBooks} />
     </div>

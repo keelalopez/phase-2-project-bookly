@@ -1,9 +1,10 @@
 
 function NavBar () {    
     return (
-        <div>
-            Navbar here
-        </div>
+        <nav>
+            <a>Books</a>
+            <a>Add New Book</a>
+        </nav>
     )
 }
 
