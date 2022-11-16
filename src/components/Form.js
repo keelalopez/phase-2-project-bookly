@@ -36,23 +36,39 @@ function Form ({elevatorNewBook}) {
     return (
       <div>
         <h3>Add New Book</h3>
-        <form >
-            <input 
-                placeholder="Title" 
-                onChange={(e) => setTitle(e.target.value)} />
+        <div className="form-box">
+          <form>
+            <input
+              placeholder="Title"
+              onChange={(e) => setTitle(e.target.value)}
+            />
             <br></br>
-            <input placeholder="Author" onChange={(e) => setAuthor(e.target.value)} />
+            <input
+              placeholder="Author"
+              onChange={(e) => setAuthor(e.target.value)}
+            />
             <br></br>
-            <input placeholder="Image" onChange={(e) => setImage(e.target.value)}/>
+            <input
+              placeholder="Image"
+              onChange={(e) => setImage(e.target.value)}
+            />
             <br></br>
-            <input placeholder="Rating" type="number" onChange={(e) => setRating(e.target.value)}/>
+            <input
+              placeholder="Rating"
+              type="number"
+              onChange={(e) => setRating(e.target.value)}
+            />
             <br></br>
-            <input placeholder="Description" onChange={(e) => setDescription(e.target.value)}/>
+            <input
+              placeholder="Description"
+              onChange={(e) => setDescription(e.target.value)}
+            />
             <br></br>
             <button onClick={handleSubmit}>Add New Book</button>
-        </form>
+          </form>
+        </div>
       </div>
-    )
+    );
   }
   
   export default Form
