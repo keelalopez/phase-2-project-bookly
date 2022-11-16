@@ -7,7 +7,7 @@
       "description": "Paulo Coelho's masterpiece tells the mystical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure. His quest will lead him to riches far different—and far more satisfying—than he ever imagined. Santiago's journey teaches us about the essential wisdom of listening to our hearts, of recognizing opportunity and learning to read the omens strewn along life's path, and, most importantly, to follow our dreams",
       "image": "https://pictures.abebooks.com/isbn/9780062315007-us.jpg",
       "rating": 4,
-      "startDate": "",
+      "startDate": "12/13/2020",
       "completed": true
     },
     {
@@ -88,7 +88,7 @@
       "image": "https://pictures.abebooks.com/isbn/9781594634932-us-300.jpg",
       "rating": 4,
       "startDate": "",
-      "completed": true
+      "completed": false
     },
     {
       "id": 10,
@@ -108,7 +108,7 @@
       "image": "https://pictures.abebooks.com/isbn/9780143127741-us.jpg",
       "rating": 4,
       "startDate": "",
-      "completed": true
+      "completed": false
     },
     {
       "id": 12,
@@ -158,7 +158,7 @@
       "image": "https://pictures.abebooks.com/isbn/9780525536291-us-300.jpg",
       "rating": 4.7,
       "startDate": "",
-      "completed": true
+      "completed": false
     },
     {
       "id": 17,
