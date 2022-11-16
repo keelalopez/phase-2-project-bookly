@@ -28,13 +28,17 @@ function App() {
     return (book.title.toLowerCase().includes(searchTerm.toLowerCase()))
   })
 
-  console.log(filteredBooks)
+  // ELEVATOR FUNCTION TO RENDER NEW BOOK
+  function elevatorNewBook (newBookObj) {
+    setBooks([...books, newBookObj])
+  }
+  
   return (
     <div className="App">
       <Header />
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <NavBar />
-      <Form />
+      <Form elevatorNewBook={elevatorNewBook}/>
       <BookList books={filteredBooks} />
     </div>
   );
