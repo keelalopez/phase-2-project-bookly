@@ -3,7 +3,7 @@ import React, {useState, useEffect,} from 'react';
 import './App.css';
 import Header from './components/Header';
 import Form from './components/Form';
-import Search from './components/Search';
+// import Search from './components/Search';
 import BookList from './components/BookList';
 import NavBar from './components/NavBar';
 import './App.css';
@@ -35,11 +35,11 @@ function App() {
   console.log(filteredBooks)
   return (
     <div className="App">
-      <Header />
-      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <NavBar />
       <Form />
       <BookList books={filteredBooks} />
+      
     </div>
   );
 }
