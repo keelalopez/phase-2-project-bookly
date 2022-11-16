@@ -1,6 +1,6 @@
 function LogIn () {
     return (
-        <div>
+        <div className="login-box">
             <input placeholder="Username"></input>
             <br></br>
             <input placeholder="Password"></input>
