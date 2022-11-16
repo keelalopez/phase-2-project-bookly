@@ -35,17 +35,11 @@ function App() {
   
   return (
     <div className="App">
-      <Header />
+    <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <NavBar />
-      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <Form elevatorNewBook={elevatorNewBook}/>
+      <BookList books={filteredBooks} />
       
-      <Route exact path="/form">
-        <Form elevatorNewBook={elevatorNewBook}/>
-      </Route>
-
-      <Route exact path="/testing">
-        <BookList books={filteredBooks} />
-      </Route>
     </div>
   );
 }
