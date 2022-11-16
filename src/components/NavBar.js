@@ -1,9 +1,12 @@
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
-function NavBar () {    
+function NavBar () {  
+
     return (
         <nav>
-            <a>Books</a>
-            <a>Add New Book</a>
+            <NavLink exact to="/testing">BookList</NavLink>
+            <NavLink exact to="/form">Add New Book</NavLink>
         </nav>
     )
 }
