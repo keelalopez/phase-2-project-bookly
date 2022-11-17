@@ -5,6 +5,7 @@ import Form from './components/Form';
 import BookList from './components/BookList';
 import NavBar from './components/NavBar';
 import LogIn from './components/LogIn';
+import RandomQuote from './components/RandomQuote';
 import './App.css';
 
 function App() {
@@ -43,6 +44,10 @@ function App() {
 
         <Route path="/form">
           <Form elevatorNewBook={elevatorNewBook} />
+        </Route>
+
+        <Route path="/quote">
+          <RandomQuote />
         </Route>
 
         <Route exact path="/">

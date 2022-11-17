@@ -27,6 +27,9 @@ function NavBar () {
             <NavLink exact to="/form" style={linkStyles}
                 activeStyle={{background: "aqua", color: "darkblue"}}>Add New Book</NavLink>
             
+            <NavLink exact to="/quote" style={linkStyles}
+                activeStyle={{background: "aqua", color: "darkblue"}}>Random Quote</NavLink>
+            
         </nav>
     )
 }
