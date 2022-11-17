@@ -23,7 +23,6 @@ html{
   display: flex;
   align-items: center;
   position: relative;
-
 }
 
 .header ::before{
@@ -31,7 +30,6 @@ html{
   position:absolute;
   background: url('./images/book-stack.png');
   background-repeat: no-repeat;
-
   top:0;
   left: 0;
   width: 100%;
