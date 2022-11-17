@@ -3,6 +3,9 @@ import { useState } from "react";
 
 const BookCard = ({ book }) => {
   const [showModal, setShowModal] = useState(false);
+  const [completed, setCompleted] = useState(book.completed);
+
+  console.log(completed)
 
   return (
     <div className="card">
@@ -21,8 +24,9 @@ const BookCard = ({ book }) => {
               <h4>Rating: {book.rating}</h4>
               <h4>Started Reading: {book.startDate}</h4>
               <p>{book.description}</p>
-              <button className={book.completed ? "finished" : null}>
-                {book.completed ? "Completed" : "Not Completed"}
+              <button>🖤</button>
+              <button className={completed ? "finished" : null} onClick={(e) => setCompleted(!completed)}>
+                {completed ? "Completed" : "Not Completed"}
               </button>
             </div>
             <img src={book.image} alt={book.title} />

@@ -9,15 +9,15 @@ function NavBar () {
         background: "darkblue",
         textDecoration: "none",
         color: "white",
-        "border-radius": "3px",
+        borderRadius: "3px",
         margin: "0px 5px 30px 5px",
-        "text-align": "center",
-        "font-size": "16px",
-        "box-shadow": "0 3px 3px rgba(212, 185, 150, 5)"
+        textAlign: "center",
+        fontSize: "16px",
+        boxShadow: "0 3px 3px rgba(212, 185, 150, 5)"
     };
 
     return (
-        <nav classsName="navbar">
+        <nav classsname="navbar">
             <NavLink exact to="/login" style={linkStyles}
                 activeStyle={{background: "aqua", color: "darkblue"}}>Log In</NavLink>
             
