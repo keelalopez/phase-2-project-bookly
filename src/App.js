@@ -38,6 +38,7 @@ function App() {
   function handleDropDownChange (e) {
     if (e.target.value === "Completed") return setSelected(true)
     if (e.target.value === "Not Completed") return setSelected(false)
+    if (e.target.value === "All") return setSelected("All")
   }
   
   const booksCompletion = filteredBooks.filter((book) => {
