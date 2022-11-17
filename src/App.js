@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import LogIn from './components/LogIn';
 import RandomQuote from './components/RandomQuote';
 import './App.css';
+import { ListItem } from '@mui/material';
 
 function App() {
 
@@ -24,7 +25,8 @@ function App() {
   // SAVES SEARCHED STRING AND FILTERS
   const [searchTerm, setSearchTerm]= useState("")
   const filteredBooks = books.filter((book) => {
-    return (book.title.toLowerCase().includes(searchTerm.toLowerCase()))
+    return (book.title.toLowerCase().includes(searchTerm.toLowerCase())) ||
+        (book.author.toLowerCase().includes(searchTerm.toLowerCase()))
   })
 
   // ELEVATOR FUNCTION TO RENDER NEW BOOK
@@ -32,10 +34,23 @@ function App() {
     setBooks([...books, newBookObj])
   }
 
+  //ADDED DROP DOWN TO FILTER THROUGH COMPLETED AND NON
+  const [selected, setSelected] = useState("All")
+  function handleDropDownChange (e) {
+    if (e.target.value === "Completed") return setSelected(true)
+    if (e.target.value === "Not Completed") return setSelected(false)
+    if (e.target.value === "All") return setSelected("All")
+  }
+  
+  const booksCompletion = filteredBooks.filter((book) => {
+    if (selected === "All") return true
+    return book.completed == selected
+  })
+
   return (
     <div className="App">
       <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <NavBar />
+      <NavBar handleDropDownChange={handleDropDownChange}/>
 
       <Switch>
         <Route path="/login">
@@ -52,7 +67,7 @@ function App() {
 
         <Route exact path="/">
           <BookList
-            books={filteredBooks}
+            books={booksCompletion}
           />
         </Route>
       </Switch>

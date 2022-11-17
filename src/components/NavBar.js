@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Dropdown from "./Dropdown";
 
-function NavBar () {  
+function NavBar ({handleDropDownChange}) {  
     const linkStyles = {
         display: "inline-block",
         width: "150px",
-        padding: "12px",
+        padding: "8px",
         background: "darkblue",
         textDecoration: "none",
         color: "white",
@@ -13,7 +14,7 @@ function NavBar () {
         margin: "0px 5px 30px 5px",
         textAlign: "center",
         fontSize: "16px",
-        boxShadow: "0 3px 3px rgba(212, 185, 150, 5)"
+        boxShadow: "0 3px 3px rgba(1, 1, 1, 5)"
     };
 
     return (
@@ -29,6 +30,9 @@ function NavBar () {
             
             <NavLink exact to="/quote" style={linkStyles}
                 activeStyle={{background: "aqua", color: "darkblue"}}>Random Quote</NavLink>
+            
+            <Dropdown handleDropDownChange={handleDropDownChange}/>
+            
             
         </nav>
     )
