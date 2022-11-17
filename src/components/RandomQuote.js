@@ -13,7 +13,7 @@ function RandomQuote () {
       <div className="quote">
         <h1>
           {quote.content} <br></br>
-          -{quote.author}
+          -{quote.author} 
         </h1>
       </div>
     );
