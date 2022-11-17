@@ -1,8 +1,8 @@
 import BookCard from "./BookCard";
-// import Search from "./Search";
  import GirlReading from "../images/Girl-Reading.jpeg";
 
   const Header = ({searchTerm, setSearchTerm}) => {
+
 
   function handleSearch(e){
    setSearchTerm(e.target.value)
@@ -17,7 +17,7 @@ import BookCard from "./BookCard";
 
           <div className="row2">
             <h2>
-              Some books leave us free  <br /> Some books make us free
+              Some books leave us free <br /> and some books make us free
             </h2>
           </div>
 
@@ -29,13 +29,10 @@ import BookCard from "./BookCard";
                 type="text"
                 placeholder="Enter Your Book Name"
               />
-
               <button>
-                <i className="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
-
-            <img src={GirlReading} alt= "" />
           </div>
         </div>
       </>

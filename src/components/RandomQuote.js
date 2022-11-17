@@ -10,11 +10,13 @@ function RandomQuote () {
     }, [])
     console.log(quote)
     return (
-        <div>
-            {quote.content}
-            {quote.author}
-        </div>
-    )
+      <div className="quote">
+        <h1>
+          {quote.content} <br></br>
+          -{quote.author}
+        </h1>
+      </div>
+    );
 
 }
 
