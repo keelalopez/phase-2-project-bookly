@@ -24,6 +24,7 @@ const BookCard = ({ book }) => {
               <h4>Rating: {book.rating}</h4>
               <h4>Started Reading: {book.startDate}</h4>
               <p>{book.description}</p>
+              <button>🖤</button>
               <button className={completed ? "finished" : null} onClick={(e) => setCompleted(!completed)}>
                 {completed ? "Completed" : "Not Completed"}
               </button>
