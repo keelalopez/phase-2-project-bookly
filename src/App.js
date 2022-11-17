@@ -25,7 +25,8 @@ function App() {
   // SAVES SEARCHED STRING AND FILTERS
   const [searchTerm, setSearchTerm]= useState("")
   const filteredBooks = books.filter((book) => {
-    return (book.title.toLowerCase().includes(searchTerm.toLowerCase()))
+    return (book.title.toLowerCase().includes(searchTerm.toLowerCase())) ||
+        (book.author.toLowerCase().includes(searchTerm.toLowerCase()))
   })
 
   // ELEVATOR FUNCTION TO RENDER NEW BOOK

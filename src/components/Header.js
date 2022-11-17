@@ -2,11 +2,10 @@ import BookCard from "./BookCard";
 // import Search from "./Search";
  import GirlReading from "../images/Girl-Reading.jpeg";
 
-const Header = ({searchTerm, setSearchTerm}) => {
+  const Header = ({searchTerm, setSearchTerm}) => {
 
   function handleSearch(e){
    setSearchTerm(e.target.value)
-   console.log(e.target.value)
 
   }
     return (
