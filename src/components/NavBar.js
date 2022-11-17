@@ -1,7 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Dropdown from "./Dropdown";
 
-function NavBar () {  
+function NavBar ({handleDropDownChange}) {  
     const linkStyles = {
         display: "inline-block",
         width: "150px",
@@ -29,6 +30,9 @@ function NavBar () {
             
             <NavLink exact to="/quote" style={linkStyles}
                 activeStyle={{background: "aqua", color: "darkblue"}}>Random Quote</NavLink>
+            
+            <Dropdown handleDropDownChange={handleDropDownChange}/>
+            
             
         </nav>
     )
