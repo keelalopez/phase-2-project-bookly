@@ -97,7 +97,7 @@
       "description": "Wow, No Thank You is a hilarious, no-holds-barred, look at life that will have you shaking your head in agreement.” “Think of the full-disclosure, tell-all convos you have with your closest friends, typed up and presented to the world in book-form.",
       "image": "https://pictures.abebooks.com/isbn/9780525563488-us-300.jpg",
       "rating": 4,
-      "startDate": "",
+      "startDate": "07/07/2021",
       "completed": true
     },
     {
@@ -107,7 +107,7 @@
       "description": "The Body Keeps the Score is an overview of the relationship between our bodies and minds. Van Der Kolk uses his years of experience researching, diagnosing and treating PTSD to offer guidance on the strong relationship between trauma and our bodies.",
       "image": "https://pictures.abebooks.com/isbn/9780143127741-us.jpg",
       "rating": 4,
-      "startDate": "",
+      "startDate": "10/12/2021",
       "completed": false
     },
     {
@@ -137,6 +137,7 @@
       "description": "All About Love teaches you how to get more affection and connection in your relationships by explaining why true love is so difficult these days and how to combat the unrealistic expectations society has set up that makes it so hard.",
       "image": "https://pictures.abebooks.com/isbn/9780060959470-us.jpg",
       "rating": 4,
+      "startDate": "08/30/2022",
       "startDate": "12/12/2021",
       "completed": true
     },
