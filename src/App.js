@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
 
-  // FETCHES DATA AND STORES IN STATE VARIABLE
+  // FETCHES DATA AND STORES IN STATE VARIABLE.
   const [books, setBooks] = useState([])
   
   const URL = "http://localhost:3000"
