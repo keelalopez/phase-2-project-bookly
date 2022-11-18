@@ -19,9 +19,9 @@ function Form ({elevatorNewBook}) {
             author: author,
             description: description,
             image: image,
-            rating: rating
+            rating: rating,
             // startDate: "",
-            // "completed": true
+            "completed": false
         }
 
         fetch("http://localhost:3000/books", {
