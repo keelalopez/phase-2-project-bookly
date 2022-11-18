@@ -32,8 +32,6 @@ function NavBar ({handleDropDownChange}) {
                 activeStyle={{background: "aqua", color: "darkblue"}}>Random Quote</NavLink>
             
             <Dropdown handleDropDownChange={handleDropDownChange}/>
-            
-            
         </nav>
     )
 }
